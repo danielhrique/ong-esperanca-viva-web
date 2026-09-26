@@ -1,6 +1,0 @@
-Apresentação do desafio
-
-A construção de aplicações web modernas exige a transformação de interfaces estáticas em plataformas interativas e fluidas. No cenário atual de desenvolvimento front-end, dominar o controle do DOM, gerenciar eventos, validar dados e organizar o código é imprescindível para a criação de sistemas robustos. Esta experiência prática aborda exatamente esses pilares, exigindo o refinamento lógico em JavaScript para garantir alta performance e manutenibilidade do código-fonte.
-
-Desafio
-Transformar uma interface previamente estruturada e estática em uma Single Page Application (SPA) dinâmica. Será necessário implementar navegação fluida, criar um sistema de templates JavaScript, estruturar rotinas de validação de formulários com feedback adequado ao utilizador, além de assegurar o armazenamento de dados através do localStorage. Adicionalmente, você deverá garantir que o código JavaScript seja modularizado e organizado por áreas de funcionalidade.
