@@ -1,3 +1,5 @@
+const heroImageUrl = new URL('../../imagens/voluntarios-acao-social.png', import.meta.url).href;
+
 const contactItems = [
   'E-mail: contato@ongesperancaviva.org',
   'Telefone: (11) 99999-9999',
@@ -83,7 +85,7 @@ const templates = {
       </div>
 
       <img
-        src="../imagens/voluntarios-acao-social.png"
+        src="${heroImageUrl}"
         alt="Pessoa voluntária de costas usando camiseta com a palavra Volunteer durante uma ação social"
       >
     </section>

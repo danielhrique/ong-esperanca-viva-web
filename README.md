@@ -89,10 +89,28 @@ O projeto foi revisado com foco nas diretrizes WCAG 2.1 nível AA. Entre os cuid
 
 ## Como Executar
 
-Por ser uma aplicação estática, não há necessidade de instalação de dependências.
+A aplicação pode ser aberta diretamente durante a fase de desenvolvimento ou executada com Vite para simular um ambiente local com servidor.
 
-1. Abra o arquivo `html/inicio.html` no navegador; ou
-2. Publique a pasta em um serviço de hospedagem estática, como GitHub Pages, Netlify ou Vercel.
+```bash
+npm install
+npm run dev
+```
+
+Também é possível abrir o arquivo `html/inicio.html` diretamente no navegador para inspeções simples da interface estática.
+
+## Build de Produção
+
+A build de produção é gerada com Vite. O processo agrupa e minifica os módulos JavaScript, compacta a folha CSS, reescreve os caminhos dos assets e executa um pós-build para minificar os arquivos HTML gerados em `dist/`.
+
+```bash
+npm run build
+```
+
+Após a execução, os arquivos prontos para publicação ficam disponíveis na pasta `dist/`. Para conferir localmente a versão final, utilize:
+
+```bash
+npm run preview
+```
 
 ## Preparação Para Produção
 
