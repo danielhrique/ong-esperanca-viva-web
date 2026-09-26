@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - ONG Esperança Viva</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="inicio.html">ONG Esperança Viva</a>
+
+    <input class="nav-toggle" type="checkbox" id="menu-toggle">
+    <label class="menu-button" for="menu-toggle">
+      <span class="sr-only">Abrir menu de navegação</span>
+      <span class="menu-line line-top" aria-hidden="true"></span>
+      <span class="menu-line line-middle" aria-hidden="true"></span>
+      <span class="menu-line line-bottom" aria-hidden="true"></span>
+    </label>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="inicio.html">Início</a>
+
+      <details class="nav-dropdown">
+        <summary>Projetos</summary>
+        <div class="dropdown-menu">
+          <a href="projetos.html">Frentes de atuação</a>
+          <a href="projetos.html">Doações</a>
+          <a href="projetos.html">Voluntariado</a>
+        </div>
+      </details>
+
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Cadastro de apoiadores</p>
+      <h1>Participe das nossas ações</h1>
+      <p>
+        Preencha o formulário abaixo para se cadastrar como apoiador da ONG
+        Esperança Viva e receber informações sobre doações, campanhas e
+        atividades voluntárias.
+      </p>
+    </section>
+
+    <section class="alert alert-success" role="status">
+      <strong>Cadastro seguro:</strong>
+      <p>Os campos com validação ajudam a reduzir erros antes do envio das informações.</p>
+    </section>
+
+    <section class="modal-preview" aria-label="Exemplo de modal informativo">
+      <details class="modal-card">
+        <summary class="button">Ver orientações de cadastro</summary>
+        <div class="modal-content" role="dialog" aria-labelledby="modal-title">
+          <h2 id="modal-title">Orientações para apoiadores</h2>
+          <p>Confira seus dados antes do envio e utilize os formatos solicitados para CPF, telefone e CEP.</p>
+          <span class="badge badge-info">Feedback informativo</span>
+        </div>
+      </details>
+    </section>
+
+    <section class="form-section">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+
+          <label for="nome">Nome completo</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            minlength="3"
+            required
+          >
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
+
+          <label for="nascimento">Data de nascimento</label>
+          <input
+            type="date"
+            id="nascimento"
+            name="nascimento"
+            required
+          >
+
+          <label for="cpf">CPF</label>
+          <input
+            type="text"
+            id="cpf"
+            name="cpf"
+            placeholder="000.000.000-00"
+            maxlength="14"
+            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+            title="Formato: 000.000.000-00"
+            required
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Contato</legend>
+
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(00) 00000-0000"
+            maxlength="15"
+            pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+            title="Formato: (00) 00000-0000"
+            required
+          >
+
+          <label for="preferencia-contato">Preferência de contato</label>
+          <select id="preferencia-contato" name="preferencia-contato" required>
+            <option value="">Selecione</option>
+            <option value="email">E-mail</option>
+            <option value="telefone">Telefone</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <label for="cep">CEP</label>
+          <input
+            type="text"
+            id="cep"
+            name="cep"
+            placeholder="00000-000"
+            maxlength="9"
+            pattern="[0-9]{5}-[0-9]{3}"
+            title="Formato: 00000-000"
+            required
+          >
+
+          <label for="endereco">Endereço</label>
+          <input
+            type="text"
+            id="endereco"
+            name="endereco"
+            required
+          >
+
+          <label for="cidade">Cidade</label>
+          <input
+            type="text"
+            id="cidade"
+            name="cidade"
+            required
+          >
+
+          <label for="estado">Estado</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Forma de engajamento</legend>
+
+          <label for="tipo-apoio">Como deseja contribuir?</label>
+          <select id="tipo-apoio" name="tipo-apoio" required>
+            <option value="">Selecione</option>
+            <option value="doacao">Doação financeira</option>
+            <option value="voluntariado">Trabalho voluntário</option>
+            <option value="ambos">Doação e voluntariado</option>
+          </select>
+
+          <label for="disponibilidade">Disponibilidade semanal</label>
+          <input
+            type="number"
+            id="disponibilidade"
+            name="disponibilidade"
+            min="1"
+            max="40"
+            placeholder="Horas por semana"
+          >
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Conte brevemente como deseja ajudar"
+          ></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 ONG Esperança Viva. Todos os direitos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
