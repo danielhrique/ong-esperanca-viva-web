@@ -133,6 +133,23 @@ npm run optimize:images
 
 A otimização reduziu a imagem de aproximadamente 491 KB para 39,7 KB, preservando qualidade suficiente para a área hero e melhorando o carregamento em conexões móveis.
 
+
+## Deploy na Vercel
+
+O projeto está preparado para publicação na Vercel com o arquivo `vercel.json`. A plataforma deve instalar as dependências com `npm install`, executar `npm run build` e publicar o conteúdo gerado na pasta `dist/`.
+
+Configuração utilizada:
+
+```json
+{
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
+```
+
+O fluxo recomendado é conectar o repositório GitHub `ong-esperanca-viva-web` à Vercel, selecionar a branch `main` como origem de produção e manter o deploy automático habilitado para novas alterações versionadas.
+
 ## Manutenção
 
 Novas funcionalidades devem ser criadas em branches `feature/*`, revisadas antes da integração na branch `develop` e promovidas para `main` apenas quando estiverem estáveis. Essa organização reduz riscos, preserva o histórico e facilita a colaboração em equipe.
