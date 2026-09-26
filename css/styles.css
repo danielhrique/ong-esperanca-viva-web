@@ -828,3 +828,111 @@ form button {
     padding: var(--space-4);
   }
 }
+
+/* 7. Preferências de cor e alto contraste */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #86efac;
+    --color-primary-dark: #bbf7d0;
+    --color-primary-light: #14532d;
+    --color-secondary: #93c5fd;
+    --color-accent: #fbbf24;
+    --color-danger: #fca5a5;
+    --color-neutral-50: #020617;
+    --color-neutral-100: #0f172a;
+    --color-neutral-300: #475569;
+    --color-neutral-700: #cbd5e1;
+    --color-neutral-900: #f8fafc;
+    --color-white: #111827;
+    --shadow-sm: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.32);
+    --shadow-md: 0 1rem 2rem rgba(0, 0, 0, 0.42);
+  }
+
+  .site-header {
+    background: rgba(17, 24, 39, 0.96);
+  }
+
+  .skip-link,
+  .site-footer {
+    background: #000000;
+  }
+
+  .highlight,
+  .toast-card,
+  input:required:valid,
+  select:required:valid,
+  textarea:required:valid,
+  .field-success {
+    background-color: #052e16;
+  }
+
+  .badge-success {
+    background: #14532d;
+    color: #dcfce7;
+  }
+
+  .badge-warning {
+    background: #78350f;
+    color: #fef3c7;
+  }
+
+  .badge-info {
+    background: #1e3a8a;
+    color: #dbeafe;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --color-primary: #005a24;
+    --color-primary-dark: #003d18;
+    --color-primary-light: #e8fff0;
+    --color-secondary: #003ea8;
+    --color-accent: #8a4b00;
+    --color-danger: #8f0000;
+    --color-neutral-50: #ffffff;
+    --color-neutral-100: #f5f5f5;
+    --color-neutral-300: #6b7280;
+    --color-neutral-700: #111827;
+    --color-neutral-900: #000000;
+    --color-white: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 4px solid #000000;
+    outline-offset: 4px;
+  }
+
+  .site-header,
+  .content-section,
+  .card,
+  .form-section form,
+  fieldset,
+  .feedback-panel,
+  .alert,
+  .modal-card,
+  .modal-content,
+  input,
+  select,
+  textarea,
+  .menu-button,
+  .dropdown-menu {
+    border-color: #000000;
+  }
+
+  .button,
+  button,
+  .skip-link {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus-visible,
+  .nav-dropdown summary:hover,
+  .nav-dropdown summary:focus-visible {
+    background: #000000;
+    color: #ffffff;
+  }
+}
+
