@@ -1,4 +1,4 @@
-const heroImageUrl = new URL('../../imagens/voluntarios-acao-social.png', import.meta.url).href;
+const heroImageUrl = new URL('../../imagens/voluntarios-acao-social.webp', import.meta.url).href;
 
 const contactItems = [
   'E-mail: contato@ongesperancaviva.org',

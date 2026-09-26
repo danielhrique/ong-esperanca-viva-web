@@ -123,6 +123,16 @@ Antes do deploy, recomenda-se:
 - testar a aplicação em diferentes larguras de tela;
 - confirmar o funcionamento do formulário e do localStorage.
 
+## Otimização de Imagens
+
+A imagem principal foi convertida de PNG para WebP usando Sharp, com redimensionamento para 960px de largura e qualidade 82. O processo é executado com:
+
+```bash
+npm run optimize:images
+```
+
+A otimização reduziu a imagem de aproximadamente 491 KB para 39,7 KB, preservando qualidade suficiente para a área hero e melhorando o carregamento em conexões móveis.
+
 ## Manutenção
 
 Novas funcionalidades devem ser criadas em branches `feature/*`, revisadas antes da integração na branch `develop` e promovidas para `main` apenas quando estiverem estáveis. Essa organização reduz riscos, preserva o histórico e facilita a colaboração em equipe.

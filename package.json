@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build && node scripts/minify-html.mjs",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "optimize:images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {
+    "sharp": "^0.35.4",
     "vite": "^7.1.7"
   }
 }
