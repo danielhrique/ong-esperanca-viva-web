@@ -78,6 +78,15 @@ O projeto foi revisado com foco nas diretrizes WCAG 2.1 nível AA. Entre os cuid
 - mensagens de feedback com atributos ARIA quando necessário;
 - estrutura de títulos organizada de forma hierárquica.
 
+### Checklist WCAG 2.1 AA
+
+- Conteúdo textual com contraste adequado em fundos claros e escuros.
+- Elementos interativos acessíveis por teclado.
+- Indicadores visuais de foco em links, botões e campos de formulário.
+- Formulários com rótulos explícitos e mensagens de validação compreensíveis.
+- Imagens informativas com atributo `alt` descritivo.
+- Navegação estruturada com elementos semânticos.
+
 ## Como Executar
 
 Por ser uma aplicação estática, não há necessidade de instalação de dependências.
